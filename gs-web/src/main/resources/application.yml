@@ -1,0 +1,49 @@
+server:
+  port: 9012
+
+spring:
+  application:
+    name: gs-web-9012
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/
+  instance:
+    prefer-ip-address: true
+
+zuul:
+  routes:
+    gs-gathering:
+      path: /gathering/**
+      serviceId: gs-gathering-9005
+    gs-article:
+      path: /article/**
+      serviceId: gs-article-9004
+
+    gs-base:
+      path: /base/**
+      serviceId: gs-base-9001
+
+    gs-friend:
+      path: /friend/**
+      serviceId: gs-friend-9010
+
+    gs-qa:
+      path: /qa/**
+      serviceId: gs-qa-9003
+
+    gs-recruit:
+      path: /recruit/**
+      serviceId: gs-recruit-9002
+
+    gs-discussion:
+      path: /discussion/**
+      serviceId: gs-discussion-9006
+
+    gs-user:
+      path: /user/**
+      serviceId: gs-user-9008
+
+    gs-search:
+      path: /search/**
+      serviceId: gs-search-9007

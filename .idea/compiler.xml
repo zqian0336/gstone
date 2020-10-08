@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="gs-base" />
+        <module name="gs-recruit" />
+        <module name="gs-search" />
+        <module name="gs-web" />
+        <module name="gs-config" />
+        <module name="gs-qa" />
+        <module name="gs-manager-zuul" />
+        <module name="gs-sms" />
+        <module name="gs-common" />
+        <module name="gs-eureka" />
+        <module name="gs-user" />
+        <module name="tg-eureka" />
+        <module name="gs-discussion" />
+        <module name="gs-friend" />
+        <module name="gs-gathering" />
+        <module name="gs-article" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="tg-eureka" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="gs-article" options="-parameters" />
+      <module name="gs-base" options="-parameters" />
+      <module name="gs-common" options="-parameters" />
+      <module name="gs-config" options="-parameters" />
+      <module name="gs-discussion" options="-parameters" />
+      <module name="gs-eureka" options="-parameters" />
+      <module name="gs-friend" options="-parameters" />
+      <module name="gs-gathering" options="-parameters" />
+      <module name="gs-manager-zuul" options="-parameters" />
+      <module name="gs-qa" options="-parameters" />
+      <module name="gs-recruit" options="-parameters" />
+      <module name="gs-search" options="-parameters" />
+      <module name="gs-sms" options="-parameters" />
+      <module name="gs-user" options="-parameters" />
+      <module name="gs-web" options="-parameters" />
+      <module name="tg-eureka" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,7 @@
+server:
+  port: 9009
+spring:
+  application:
+    name: gs-sms-9009
+  rabbitmq:
+    host: 54.183.17.118

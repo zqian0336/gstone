@@ -1,0 +1,17 @@
+server:
+  port: 9002
+
+spring:
+  application:
+    name: gs-recruit-9002
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://eventbox-mysql.cu2gba3klpnn.us-west-1.rds.amazonaws.com:3306/gs_recruit?characterEncoding=utf-8&useSSL=true&useUnicode=true&serverTimezone=UTC
+    username: root
+    password: Qian2012
+  jpa:
+    database: mysql
+    show-sql: true
+    #    Whether to enable logging of SQL statement
+    generate-ddl: true
+#    Whether to initialize the schema on startup

@@ -1,0 +1,20 @@
+server:
+  port: 9006
+
+spring:
+  application:
+    name: gs-discussion-9006
+  data:
+    mongodb:
+      host: 54.183.17.118:27017
+      database: gs_discussion
+    redis:
+      host: 54.183.17.118:6379
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/
+  instance:
+    prefer-ip-address: true
+

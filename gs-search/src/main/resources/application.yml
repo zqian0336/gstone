@@ -1,0 +1,15 @@
+server:
+  port: 9007
+spring:
+  application:
+    name: gs-search-9007
+  data:
+    elasticsearch:
+      cluster-name: 127.0.0.1:9300
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/
+  instance:
+    prefer-ip-address: true

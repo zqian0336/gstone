@@ -1,0 +1,25 @@
+server:
+  port: 9010
+spring:
+  application:
+    name: gs-friend-9010
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://eventbox-mysql.cu2gba3klpnn.us-west-1.rds.amazonaws.com:3306/gs_user?characterEncoding=utf-8&useSSL=true&useUnicode=true&serverTimezone=UTC
+    username: root
+    password: Qian2012
+  jpa:
+    database: mysql
+    show-sql: true
+
+jwt:
+  config:
+    key: itcast
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/
+  instance:
+    prefer-ip-address: true
+
